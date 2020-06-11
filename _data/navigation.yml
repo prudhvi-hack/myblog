@@ -1,0 +1,14 @@
+- name: Blog
+  link: /
+
+- name: Probability & Statistics
+  link: /probabilityandstatistics
+
+- name: Machine Learning
+  link: /machinelearning
+
+- name: Deep Learning
+  link: /deeplearning
+
+- name: Computer Architecture
+  link: /ca
