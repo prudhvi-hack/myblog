@@ -27,6 +27,16 @@ a:hover {
   text-decoration: none;
 }
 
-jumbotron:hover {
-  background-color: blue;
+.cont {
+  background-color: blanchedalmond;
+  border-radius: 4px;
+}
+
+.cont:hover {
+  background-color: rgb(245, 220, 184);
+}
+
+.article {
+  max-width: 70%;
+  margin: 0 auto;
 }

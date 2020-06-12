@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
-<div class="post-head">
-  <h1>{{ page.title }}</h1>
-  <p class="post-date">  {{page.date | date_to_string}} </p>
-</div>
+<div class="container-fluid article">
+  <div class="post-head">
+    <h1>{{ page.title }}</h1>
+    <p class="post-date"> {{page.date | date_to_string}} </p>
+  </div>
 
-<article>{{ content }}</article>
+  <article>{{ content }}</article>
+  </article>
+</div>

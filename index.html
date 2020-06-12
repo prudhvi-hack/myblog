@@ -6,12 +6,13 @@ layout: default
 <h1>Latest Posts</h1>
 {% for post in site.posts %}
 <a href="{{ post.url }}">
-  <div class="container my-3 p-4" style="border:1px solid #cecece;">
+  <div class="container-fluid my-3 p-4 cont" style="">
     <div class="row">
-      <h2 class="col-sm " style="color:red">{{ post.title }}</h2>
-      <p class="col-sm ">{{ post.type }}</p>
+      <h2 class="col-sm-8 text-info">{{ post.title }}</h2>
+      <p class="col-sm-4 text-success">{{ post.type }} </p>
+
     </div>
-    <div class=post-content>
+    <div class="p-4 post-content">
       {{ post.excerpt }}
     </div>
   </div>
