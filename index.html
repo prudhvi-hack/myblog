@@ -5,15 +5,15 @@ layout: default
 
 <h1>Latest Posts</h1>
 {% for post in site.posts %}
-  <a href="{{ post.url }}">
-    <div class="jumbotron my-3">
-      <div class="post-head">
-        <h2 class="post-title">{{ post.title }}</h2>
-        <p class="post-type">{{ post.type }}</p>
-      </div>
-      <div class=post-content>
-      {{ post.excerpt }}
-      </div>
+<a href="{{ post.url }}">
+  <div class="container my-3 p-4" style="border:1px solid #cecece;">
+    <div class="row">
+      <h2 class="col-sm " style="color:red">{{ post.title }}</h2>
+      <p class="col-sm ">{{ post.type }}</p>
     </div>
-  </a>
+    <div class=post-content>
+      {{ post.excerpt }}
+    </div>
+  </div>
+</a>
 {% endfor %}
