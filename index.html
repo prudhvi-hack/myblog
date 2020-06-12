@@ -2,19 +2,22 @@
 title: Prudhvi G's Blog
 layout: default
 ---
+<div class="row">
+  <div class="offset-md-2 col-md-8">
+    <h1>Latest Posts</h1>
+    {% for post in site.posts %}
+    <a href="{{ post.url }}">
+      <div class="container-fluid my-3 p-4 cont">
+        <div class="row">
+          <h2 class="col-md-8 text-info">{{ post.title }}</h2>
+          <p class="col-md-4 text-success">{{ post.type }} </p>
 
-<h1>Latest Posts</h1>
-{% for post in site.posts %}
-<a href="{{ post.url }}">
-  <div class="container-fluid my-3 p-4 cont" style="">
-    <div class="row">
-      <h2 class="col-sm-8 text-info">{{ post.title }}</h2>
-      <p class="col-sm-4 text-success">{{ post.type }} </p>
-
-    </div>
-    <div class="p-4 post-content">
-      {{ post.excerpt }}
-    </div>
+        </div>
+        <div class="p-4 post-content">
+          {{ post.excerpt }}
+        </div>
+      </div>
+    </a>
+    {% endfor %}
   </div>
-</a>
-{% endfor %}
+</div>
