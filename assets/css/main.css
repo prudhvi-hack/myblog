@@ -28,12 +28,12 @@ a:hover {
 }
 
 .cont {
-  background-color: blanchedalmond;
+  background-color: rgb(230, 223, 223);
   border-radius: 4px;
 }
 
 .cont:hover {
-  background-color: rgb(245, 220, 184);
+  background-color: rgb(204, 195, 195);
 }
 
 .article {
