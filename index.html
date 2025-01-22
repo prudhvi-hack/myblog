@@ -1,23 +1,110 @@
 ---
-title: Prudhvi G's Blog
+title: Prudhvi G's Resume
 layout: default
 ---
-<div class="row">
-  <div class="offset-md-2 col-md-8">
-    <h1>Latest Posts</h1>
-    {% for post in site.posts %}
-    <a href="{{ post.url }}">
-      <div class="container my-3 p-4 cont">
-        <div class="row">
-          <h2 class="col-md-8 text-info">{{ post.title }}</h2>
-          <p class="col-md-4 text-success">{{ post.type }} </p>
 
-        </div>
-        <div class="p-4 post-content">
-          {{ post.excerpt }}
-        </div>
-      </div>
-    </a>
-    {% endfor %}
+<div class="timeline-container">
+
+  <!-- Education -->
+  <h2>Education</h2>
+  
+  <div class="timeline-item">
+    <div class="timeline-date">Aug 2024 – Dec 2025</div>
+    <div class="timeline-content">
+      <h3>MS in Computer Science & Engineering</h3>
+      <div class="subtext">The Pennsylvania State University, University Park, PA</div>
+    </div>
   </div>
+
+  <div class="timeline-item">
+    <div class="timeline-date">July 2018 – June 2022</div>
+    <div class="timeline-content">
+      <h3>B.Tech in Computer Science & Engineering</h3>
+      <div class="subtext">SASTRA University, Thanjavur, India (8.9186 CGPA)</div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <h2>Experience</h2>
+
+  <div class="timeline-item">
+    <div class="timeline-date">Feb 2024 – July 2024</div>
+    <div class="timeline-content">
+      <h3>Software Development Engineer 2 @ PayPal Chennai</h3>
+      <ul>
+        <li>Implemented Document Intelligence Feedback Loop collecting 10,000+ responses to improve model accuracy</li>
+        <li>Developed backend systems for AI training data collection during account reviews, targeting 100+ headcount savings</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-date">July 2022 – Feb 2024</div>
+    <div class="timeline-content">
+      <h3>Software Development Engineer 1 @ PayPal Chennai</h3>
+      <ul>
+        <li>Redesigned Mars review tool UX, reducing cross-domain onboarding from weeks to days</li>
+        <li>Built new appeals review flow with pre-block outreach, achieving $10M+ loss savings</li>
+        <li>Improved web app performance (100x staging, 2x production)</li>
+        <li>Created reverse profile changes action handling 250K accounts/hour</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-date">Feb 2022 – June 2022</div>
+    <div class="timeline-content">
+      <h3>Software Development Intern @ PayPal Chennai</h3>
+      <ul>
+        <li>Implemented First Party Tracking Logs used by 20+ teams</li>
+        <li>Built Google BigQuery visualization app in 2 months</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <h2>Projects</h2>
+
+  <div class="timeline-item">
+    <div class="timeline-date">2023</div>
+    <div class="timeline-content">
+      <h3>Distributed Parallel File System</h3>
+      <ul>
+        <li>Client-server architecture with gRPC communication</li>
+        <li>Token-based locking for sequential consistency</li>
+        <li>LRU client caching for performance optimization</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-date">2022</div>
+    <div class="timeline-content">
+      <h3><a href = "https://github.com/prudhvi-hack/Kirana.git">Kirana (Cafeteria Management)</a></h3>
+      <ul>
+        <li>Flutter frontend with Firebase/Riverpod</li>
+        <li>Ruby on Rails backend with data visualization</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-date">2021</div>
+    <div class="timeline-content">
+      <h3>UAV Path Planning Research</h3>
+      <ul>
+        <li>Computational geometry techniques in Python</li>
+        <li>Published research paper</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Technical Skills -->
+  <h2>Technical Skills</h2>
+  <div class="skills-container">
+    <p><strong>Languages:</strong> Java, Python, C/C++, SQL, JavaScript, HTML/CSS, R, Ruby</p>
+    <p><strong>Frameworks:</strong> React, Node.js, Spring Boot, Django, Flask, FastAPI</p>
+    <p><strong>Domains:</strong> Machine Learning, Computer Vision, NLP, Web Development, Distributed Systems</p>
+  </div>
+
 </div>

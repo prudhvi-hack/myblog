@@ -44,3 +44,40 @@ a:hover {
   max-width: 70%;
   margin: 0 auto;
 }
+
+.timeline-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.timeline-item {
+  display: flex;
+  margin: 30px 0;
+  position: relative;
+}
+
+.timeline-date {
+  width: 150px;
+  padding-right: 30px;
+  text-align: right;
+  color: #666;
+}
+
+.timeline-content {
+  flex: 1;
+  padding-left: 30px;
+  border-left: 2px solid #007bff;
+  position: relative;
+}
+
+.timeline-content:before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: #007bff;
+  border-radius: 50%;
+}
