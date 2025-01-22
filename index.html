@@ -1,110 +1,207 @@
----
-title: Prudhvi G's Resume
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prudhvi Gadupudi - Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #007bff;
+            --text-color: #333;
+        }
 
-<div class="timeline-container">
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            color: var(--text-color);
+        }
 
-  <!-- Education -->
-  <h2>Education</h2>
-  
-  <div class="timeline-item">
-    <div class="timeline-date">Aug 2024 – Dec 2025</div>
-    <div class="timeline-content">
-      <h3>MS in Computer Science & Engineering</h3>
-      <div class="subtext">The Pennsylvania State University, University Park, PA</div>
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .headshot {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid var(--secondary-color);
+            margin-right: 30px;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0 0 5px 0;
+            color: var(--primary-color);
+        }
+
+        .contact-line {
+            font-size: 0.9em;
+            margin: 3px 0;
+        }
+
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin: 25px 0 15px 0;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .position {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .company {
+            font-style: italic;
+        }
+
+        .date {
+            color: #666;
+        }
+
+        ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .skills {
+            columns: 2;
+            margin: 10px 0;
+        }
+
+        .skills p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://prudhvig.com/assets/images/headshot.JPG" alt="Prudhvi Gadupudi" class="headshot">
+        <div class="contact-info">
+            <h1>Prudhvi Gadupudi</h1>
+            <div class="contact-line">📞 +1 (582) 203-9953</div>
+            <div class="contact-line">📧 <a href="mailto:gvp5349@psu.edu">gvp5349@psu.edu</a></div>
+            <div class="contact-line">🌐 <a href="https://prudhvig.com">prudhvig.com</a></div>
+            <div class="contact-line">
+                <a href="https://linkedin.com/in/prudhvi-gadupudi-872251181">LinkedIn</a> | 
+                <a href="https://github.com/prudhvi-hack">GitHub</a>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="timeline-item">
-    <div class="timeline-date">July 2018 – June 2022</div>
-    <div class="timeline-content">
-      <h3>B.Tech in Computer Science & Engineering</h3>
-      <div class="subtext">SASTRA University, Thanjavur, India (8.9186 CGPA)</div>
+    <div class="section-title">Education</div>
+    <div class="experience-item">
+        <div class="experience-header">
+            <div class="position">MS in Computer Science & Engineering</div>
+            <div class="date">Aug 2024 – Dec 2025</div>
+        </div>
+        <div class="company">The Pennsylvania State University, University Park, PA</div>
     </div>
-  </div>
 
-  <!-- Experience -->
-  <h2>Experience</h2>
-
-  <div class="timeline-item">
-    <div class="timeline-date">Feb 2024 – July 2024</div>
-    <div class="timeline-content">
-      <h3>Software Development Engineer 2 @ PayPal Chennai</h3>
-      <ul>
-        <li>Implemented Document Intelligence Feedback Loop collecting 10,000+ responses to improve model accuracy</li>
-        <li>Developed backend systems for AI training data collection during account reviews, targeting 100+ headcount savings</li>
-      </ul>
+    <div class="experience-item">
+        <div class="experience-header">
+            <div class="position">B.Tech in Computer Science & Engineering</div>
+            <div class="date">July 2018 – June 2022</div>
+        </div>
+        <div class="company">SASTRA University, Thanjavur, India (8.9186 CGPA)</div>
     </div>
-  </div>
 
-  <div class="timeline-item">
-    <div class="timeline-date">July 2022 – Feb 2024</div>
-    <div class="timeline-content">
-      <h3>Software Development Engineer 1 @ PayPal Chennai</h3>
-      <ul>
-        <li>Redesigned Mars review tool UX, reducing cross-domain onboarding from weeks to days</li>
-        <li>Built new appeals review flow with pre-block outreach, achieving $10M+ loss savings</li>
-        <li>Improved web app performance (100x staging, 2x production)</li>
-        <li>Created reverse profile changes action handling 250K accounts/hour</li>
-      </ul>
+    <div class="section-title">Experience</div>
+    
+    <!-- PayPal SDE 2 -->
+    <div class="experience-item">
+        <div class="experience-header">
+            <div class="position">Software Development Engineer 2</div>
+            <div class="date">Feb 2024 – July 2024</div>
+        </div>
+        <div class="company">PayPal, Chennai</div>
+        <ul>
+            <li>Implemented Document Intelligence Feedback Loop improving model accuracy through 10k+ responses</li>
+            <li>Developed backend systems for AI training data collection targeting 100+ headcount savings</li>
+        </ul>
     </div>
-  </div>
 
-  <div class="timeline-item">
-    <div class="timeline-date">Feb 2022 – June 2022</div>
-    <div class="timeline-content">
-      <h3>Software Development Intern @ PayPal Chennai</h3>
-      <ul>
-        <li>Implemented First Party Tracking Logs used by 20+ teams</li>
-        <li>Built Google BigQuery visualization app in 2 months</li>
-      </ul>
+    <!-- PayPal SDE 1 -->
+    <div class="experience-item">
+        <div class="experience-header">
+            <div class="position">Software Development Engineer 1</div>
+            <div class="date">July 2022 – Feb 2024</div>
+        </div>
+        <div class="company">PayPal, Chennai</div>
+        <ul>
+            <li>Redesigned Mars review tool UX reducing onboarding time from weeks to days</li>
+            <li>Built new appeals flow achieving $10M+ loss savings</li>
+            <li>Improved web app performance (100x staging, 2x production)</li>
+            <li>Created reverse profile changes action handling 250K accounts/hour</li>
+        </ul>
     </div>
-  </div>
 
-  <!-- Projects -->
-  <h2>Projects</h2>
-
-  <div class="timeline-item">
-    <div class="timeline-date">2023</div>
-    <div class="timeline-content">
-      <h3>Distributed Parallel File System</h3>
-      <ul>
-        <li>Client-server architecture with gRPC communication</li>
-        <li>Token-based locking for sequential consistency</li>
-        <li>LRU client caching for performance optimization</li>
-      </ul>
+    <!-- Projects Section -->
+    <div class="section-title">Projects</div>
+    
+    <div class="experience-item">
+        <div class="experience-header">
+            <a href="#" class="position">Distributed Parallel File System</a>
+        </div>
+        <ul>
+            <li>Client-server architecture with gRPC and token-based locking</li>
+            <li>Implemented LRU caching for performance optimization</li>
+            <li>Tech: C++, gRPC, Distributed Systems</li>
+        </ul>
     </div>
-  </div>
 
-  <div class="timeline-item">
-    <div class="timeline-date">2022</div>
-    <div class="timeline-content">
-      <h3><a href = "https://github.com/prudhvi-hack/Kirana.git">Kirana (Cafeteria Management)</a></h3>
-      <ul>
-        <li>Flutter frontend with Firebase/Riverpod</li>
-        <li>Ruby on Rails backend with data visualization</li>
-      </ul>
+    <div class="experience-item">
+        <div class="experience-header">
+            <a href="https://github.com/prudhvi-hack/publicrepo" class="position">Kirana - Cafeteria Management</a>
+        </div>
+        <ul>
+            <li>Flutter frontend with Firebase integration</li>
+            <li>Ruby on Rails backend with data visualization</li>
+            <li>Tech: Flutter, Riverpod, Ruby on Rails</li>
+        </ul>
     </div>
-  </div>
 
-  <div class="timeline-item">
-    <div class="timeline-date">2021</div>
-    <div class="timeline-content">
-      <h3>UAV Path Planning Research</h3>
-      <ul>
-        <li>Computational geometry techniques in Python</li>
-        <li>Published research paper</li>
-      </ul>
+    <!-- Technical Skills -->
+    <div class="section-title">Technical Skills</div>
+    <div class="skills">
+        <p><strong>Languages:</strong> Java, Python, C/C++, SQL, JavaScript, HTML/CSS, R, Ruby</p>
+        <p><strong>Frameworks:</strong> React, Node.js, Spring Boot, Django, Flask, FastAPI</p>
+        <p><strong>ML/DL:</strong> Machine Learning, Computer Vision, NLP</p>
+        <p><strong>Systems:</strong> Computer Architecture, Distributed Systems, Linux</p>
     </div>
-  </div>
-
-  <!-- Technical Skills -->
-  <h2>Technical Skills</h2>
-  <div class="skills-container">
-    <p><strong>Languages:</strong> Java, Python, C/C++, SQL, JavaScript, HTML/CSS, R, Ruby</p>
-    <p><strong>Frameworks:</strong> React, Node.js, Spring Boot, Django, Flask, FastAPI</p>
-    <p><strong>Domains:</strong> Machine Learning, Computer Vision, NLP, Web Development, Distributed Systems</p>
-  </div>
-
-</div>
+</body>
+</html>
